@@ -1,1 +1,3 @@
-console.log('Hello the web!');
+const NewsModel = require("./newsModel");
+
+const newsModel = new NewsModel();
