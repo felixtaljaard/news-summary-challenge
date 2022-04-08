@@ -6,4 +6,10 @@ describe('newsModel', () => {
 
     expect(newsModel.getHeadlines()).toEqual([]);
   })
+  it('adds a headline', () => {
+    const newsModel = new NewsModel();
+    newsModel.addHeadline('Aliens exist')
+
+    expect(newsModel.getHeadlines()).toEqual(['Aliens exist'])
+  })
 })

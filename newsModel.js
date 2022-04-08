@@ -1,8 +1,18 @@
 class NewsModel {
+  constructor(){
+    this.headlines = [];
+  }
+
   getHeadlines() {
-    return []
+    return this.headlines;
+  }
+
+  addHeadline(headline){
+    this.headlines.push(headline)
   }
 
 }
+
+
 
 module.exports = NewsModel;
